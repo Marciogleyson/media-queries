@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media query</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <h1>Menu Site</h1>
+        <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+        <menu id="itens">
+            <ul>
+                <li><a href="#">Opção01</a></li>
+                <li><a href="#">Opção02</a></li>
+                <li><a href="#">Opção03</a></li>
+                <li><a href="#">Opção04</a></li>
+                <li><a href="#">Opção05</a></li>
+            </ul>
+        </menu>
+
+    </header>
+    <main>
+        <article>
+            <h2>Testando media Query</h2>
+            <p>Deus é o nosso refúgio e fortaleza, socorro bem presente na angústia." - Salmo 46:1. "Bendize, ó minha alma, ao Senhor, e não te esqueças de nenhum de seus benefícios." - Salmo 103:2. "Portanto, quer comais, quer bebais, ou façais outra qualquer coisa, fazei tudo para a glória de Deus." - 1 Coríntios 10:31.</p>
+
+            <p>Consegue imaginar o que Deus já preparou para você? Tem alguma ideia das bênçãos e livramentos que recebemos do Senhor? Mesmo que tentemos imaginar, Deus fez - e faz - infinitamente mais do que possamos imaginar.
+
+                Mesmo quando pedimos algo a Deus, Ele sempre faz mais! Ele é Deus de abundância e benignidade. Se pediu algo a Deus, permaneça crendo, crie expectativa no seu coração, porque se for da Sua vontade, Ele vai te surpreender!</p>
+
+            <p>O que você guarda dentro do seu coração? O que está no seu coração se reflete nas suas atitudes, nos seus pensamentos e nas suas palavras. Ao guardar a Palavra do Senhor dentro do seu ser, você agirá de uma forma que agrada a Deus e experimentará a Sua vontade.
+
+                Por isso, examine os livros que você lê, os filmes que assiste, as conversas com seus amigos e os pensamentos que enchem a sua mente. Peça ao Espírito Santo para guiá-lo e dar-lhe sabedoria para escolher o que fortalece o seu relacionamento com Deus.
+                
+                Você quer vencer o pecado em sua vida? Quer viver uma vida justa diante de Deus para glorificá-lo em todos os momentos? Coloque a Palavra de Deus em seu coração! Leia a Bíblia, medite nela e veja como a sua vida começa a se parecer cada vez mais com a vida de Jesus.</p>
+            
+            <p>Você está ansioso pela resposta às suas orações? O profeta Habacuque levantou algumas questões diante do Senhor. Havia situações que ele não conseguia entender, então ele buscava a Deus para apresentar as suas questões. No entanto, não é apenas seguir o seu caminho. Habacuque permaneceu alerta como um bom vigia, na certeza de que Deus responderia as suas súplicas.
+
+                Você se apresenta diante de Deus com essa mesma certeza? Leve suas questões a Deus e Ele lhe direcionará segundo a Sua vontade. Que mudanças você pode fazer em seu dia, ou semana, para ter um tempo caloroso com o Senhor?
+                
+                Sim, Deus responde suas orações. Sempre foi e continuará a fazê-lo. Mas quando você passa mais tempo com Ele e está mais atento à Sua voz, você experimentará mais paz. Seu espírito será fortalecido e você poderá enfrentar os desafios da vida de uma maneira diferente, segurando a mão de seu amado Salvador.</p>
+        </article>
+    </main>
+
+    <footer><p>Site Desenvolvido por Marcio Ramos</p></footer>
+    <script>
+        function mudouTamanho() {
+            if (window.innerWidth >= 768)
+            itens.style.display = 'block'
+            else {
+                itens.style.display = 'none'
+            }
+        }
+
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>
